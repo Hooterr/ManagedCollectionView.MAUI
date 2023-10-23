@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:betterCollectionView="clr-namespace:BetterCollectionView"
+             x:Class="BetterCollectionView.MainPage">
+
+    <Grid
+        RowDefinitions="30,*">
+        <Label x:Name="Velocity"/>
+        
+        <betterCollectionView:ManagedCollectionViewControl
+            Grid.Row="1"
+            x:Name="CollectionView">
+            <betterCollectionView:ManagedCollectionViewControl.ItemTemplate>
+                <DataTemplate
+                    x:DataType="x:Int32">
+                    <Label Padding="16" Margin="8,4" BackgroundColor="LightGreen" Text="{Binding}"/>
+                </DataTemplate>
+            </betterCollectionView:ManagedCollectionViewControl.ItemTemplate>
+        </betterCollectionView:ManagedCollectionViewControl>
+        
+        <ContentView Grid.Row="1" IsVisible="False">
+            <ContentView.GestureRecognizers>
+                <PanGestureRecognizer PanUpdated="PanGestureRecognizer_OnPanUpdated" />
+            </ContentView.GestureRecognizers>
+        </ContentView>
+    </Grid>
+</ContentPage>
