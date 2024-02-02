@@ -5,7 +5,7 @@ using View = Microsoft.Maui.Controls.View;
 using Android.Views;
 #endif
 
-namespace BetterCollectionView;
+namespace ManagedCollectionView;
 
 public class ManagedVelocityTracker
 {
@@ -87,7 +87,6 @@ public class ManagedVelocityTracker
 }
 
 public class ManagedCollectionViewControl : Grid
-
 {
     public ManagedCollectionViewControl()
     {

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterCollectionView", "BetterCollectionView\BetterCollectionView.csproj", "{267E4BF4-1FDB-49F5-B38E-681A5DC396C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedCollectionView", "ManagedCollectionView\ManagedCollectionView.csproj", "{7027FD0F-1B65-492D-AD87-E8CBB6092F90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{267E4BF4-1FDB-49F5-B38E-681A5DC396C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{267E4BF4-1FDB-49F5-B38E-681A5DC396C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{267E4BF4-1FDB-49F5-B38E-681A5DC396C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7027FD0F-1B65-492D-AD87-E8CBB6092F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7027FD0F-1B65-492D-AD87-E8CBB6092F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7027FD0F-1B65-492D-AD87-E8CBB6092F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7027FD0F-1B65-492D-AD87-E8CBB6092F90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

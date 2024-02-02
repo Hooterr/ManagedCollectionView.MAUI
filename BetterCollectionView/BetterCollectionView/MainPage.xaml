@@ -2,22 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:betterCollectionView="clr-namespace:BetterCollectionView"
+             xmlns:managedCollectionView="clr-namespace:ManagedCollectionView;assembly=ManagedCollectionView"
              x:Class="BetterCollectionView.MainPage">
 
     <Grid
         RowDefinitions="30,*">
         <Label x:Name="Velocity"/>
         
-        <betterCollectionView:ManagedCollectionViewControl
+        <managedCollectionView:ManagedCollectionViewControl
             Grid.Row="1"
             x:Name="CollectionView">
-            <betterCollectionView:ManagedCollectionViewControl.ItemTemplate>
+            <managedCollectionView:ManagedCollectionViewControl.ItemTemplate>
                 <DataTemplate
                     x:DataType="x:Int32">
-                    <Label Padding="16" Margin="8,4" BackgroundColor="LightGreen" Text="{Binding}"/>
+                    <VerticalStackLayout>
+                        <Label Padding="16" Margin="8,4" BackgroundColor="LightGreen" Text="{Binding}"/>
+                        <Button Text="asdf"></Button>
+                    </VerticalStackLayout>
                 </DataTemplate>
-            </betterCollectionView:ManagedCollectionViewControl.ItemTemplate>
-        </betterCollectionView:ManagedCollectionViewControl>
+            </managedCollectionView:ManagedCollectionViewControl.ItemTemplate>
+        </managedCollectionView:ManagedCollectionViewControl>
         
         <ContentView Grid.Row="1" IsVisible="False">
             <ContentView.GestureRecognizers>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:betterCollectionView="clr-namespace:BetterCollectionView"
+             x:Class="BetterCollectionView.CV2Page">
+    <Grid RowDefinitions="*">
+        <betterCollectionView:CV2
+            VerticalScrollBarVisibility="Always"
+            x:Name="cv">
+            <betterCollectionView:CV2.ItemTemplate>
+                <DataTemplate
+                    x:DataType="x:Int32">
+                    <VerticalStackLayout>
+                        <Label Padding="16" Margin="8,4" BackgroundColor="LightGreen" Text="{Binding}"/>
+                        <Button Text="asdf"></Button>
+                    </VerticalStackLayout>
+                </DataTemplate>
+            </betterCollectionView:CV2.ItemTemplate>
+        </betterCollectionView:CV2>
+        <Label VerticalOptions="Start" Text="{Binding Source={Reference cv}, Path=Content.HeightRequest}"></Label>
+        <Label VerticalOptions="Start" Text="{Binding Source={Reference cv}, Path=ScrollY}" Padding="0,25,0,0"></Label>
+    </Grid>
+</ContentPage>

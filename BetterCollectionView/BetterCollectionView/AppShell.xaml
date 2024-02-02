@@ -7,9 +7,17 @@
     Shell.FlyoutBehavior="Disabled"
     Title="BetterCollectionView">
 
+    <TabBar>
+        
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+        Title="CV2"
+        ContentTemplate="{DataTemplate local:CV2Page}"
+        Route="MainPage" />
+    </TabBar>
 
 </Shell>
